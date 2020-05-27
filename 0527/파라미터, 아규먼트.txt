@@ -1,0 +1,3 @@
+parameter - 빈그릇
+argument - 내용  
+조사 필요함
