@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>셀렉터 정의하기 연습</title>
+<style type="text/css">
+	h3,li {		/*태그 자체를 셀렉터로 사용하는 경우, 여러개 사용시 , 사용*/
+		color: brown;
+	}
+	div > div > strong {  /* > : 경로 표시 ex) div > div */
+		background-color: yellow;
+	}
+	div > ul > li > strong {
+		background-color: dodgerblue;
+	}
+	.warning { /* . : class(큰 규격) 경로 표시 */
+		color: red;
+	}
+	body.main { 
+		background: blue;
+	}
+	#list { /* #은 태그의 이름(id : 작은규격) */
+		background: mistyrose;
+	}
+	#list span {
+		color: forestgreen;
+	}
+	h3:first-letter {
+		color: red;
+	}
+	li:hover {
+		background: yellowgreen;
+	}
+</style>
+</head>
+<body class="main">
+<h3>Web Programing</h3>
+<hr>
+<div>
+	<div>2학기 <strong>학습 내용</strong></div>
+	<ul id="list">
+		<li>HTML</li>
+		<li><strong>CSS</strong></li>
+		<li>JAVASCRIPT</li>
+	</ul>
+	<div class="warning">60점 이하는 F!!!</div>
+</div>
+</body>
+</html>
